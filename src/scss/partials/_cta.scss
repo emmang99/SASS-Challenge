@@ -1,0 +1,27 @@
+/*Styling for Call To Action - cta, including image */
+
+.cta{
+  display: flex;
+  list-style:none;
+  justify-content: space-around;
+
+  li{
+    width: 25%;
+    background-color: $SpringGreen;
+    padding:10px;
+  }
+
+  img{
+    display: block;
+    border: 1px solid $Black;
+    width: 100%;
+    height: 150px;
+  }
+
+  a{
+    text-decoration: none;
+    font-size: $size_one_point_two;
+    font-weight: bold;
+  }
+
+}

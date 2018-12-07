@@ -1,0 +1,5 @@
+/*The mixin adds box-shadow*/
+
+@mixin dropShadows($shadows){
+  box-shadow: $shadows;
+}

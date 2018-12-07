@@ -1,0 +1,82 @@
+/*These will link the other scss files into this master file*/
+
+@import "fonts/_fonts.scss";
+@import "colours/_colours.scss";
+@import "mixins/_mixins.scss";
+@import "partials/_reset.scss";
+@import "partials/_nav.scss";
+@import "partials/_cta.scss";
+@import "partials/_productLists.scss";
+@import "partials/_footer.scss";
+
+/*Styling the whole document*/
+*{
+    margin:0;
+    padding: 0;
+    font-family: monospace;
+  }
+
+
+  section{
+    height: 100vh;
+    padding-top: 40px;
+  }
+
+  /*landing page styles go below*/
+  #landing h1{
+    font-size: $size_two_point_five;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #landing p{
+    font-size: $size_one_point_four;
+    margin: 60px 20px;
+  }
+
+
+  /*lets make some general styles for all 3 product sections!*/
+  section h2{
+    font-size: $size_two_point_two;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  section>p.intro{
+    font-size: $size_one_point_two;
+    width: 80%;
+    margin: 20px auto;
+    color: $White;
+    padding: 20px;
+    background-color: $Grey1;
+  }
+
+  /*finally lets style the contact page*/
+  #contact{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    dl{
+      background: $SeaGreen;
+      color: white;
+      padding: 40px;
+      @include dropShadows: 5px 5px $Grey2;
+    }
+
+    dd{
+      font-size: $size_one_point_nine;
+    }
+
+    dt{
+      font-size: $size_two_point_six;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+
+    dt:nth-of-type(2){
+      /*put a margin on the top of 60px*/
+      margin-top:60px;
+    }
+
+  }

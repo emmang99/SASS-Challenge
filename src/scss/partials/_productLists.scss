@@ -1,0 +1,41 @@
+/*set a common width for all product lists*/
+.products{
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  font-size: $size_one_point_three;
+
+  /*set common styling for all product list items*/
+  li{
+    border: 1px solid $Black;
+    background-color: $YellowGreen;
+    margin-bottom: 5px;
+    height: 100px;
+  }
+
+  /*set common elements for all product images*/
+  img{
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    background-color: $Black;
+    color: white;
+  }
+
+  /*set commond font sizing for products*/
+  button{
+    font-size: $size_one_point_three;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  div{
+    padding-left: 10px;
+  }
+
+}
+
+/*positioning with flexblox*/
+.product_category li{
+  display: flex;
+}
